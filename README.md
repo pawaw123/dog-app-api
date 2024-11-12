@@ -66,4 +66,34 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
 =======
 # dog-app-api
+To install the APP
+1.) Copy the Repository URL: https://github.com/pawaw123/dog-app-api.git
+Open terminal type: git clone https://github.com/pawaw123/dog-app-api.git
+
+2.) Install Dependencies type at terminal
+composer install
+npm install
+npm run dev
+
+3.) Create the database migration file type at terminal:
+php artisan key:generate
+
+in your env file add this or uncomment the file.
+
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=dog-app-api
+DB_USERNAME=root
+DB_PASSWORD=
+
+Create a database in your phpmyadmin or laragon or any mysql named dog-app-api
+
+run php artisan migrate
+
+4.) Run the application using
+php artisan serve
+
+
+
 >>>>>>> 05e3f8d9d5525dfaa6a02a4f4b1b4b7e12ffb50e
